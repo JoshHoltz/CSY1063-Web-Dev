@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+/* Universal Selectors/Setters */
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*Font Styles*/
+h1, h2, h3, p, li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+
+/* Main Index.html Styling */
+
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+    ;
+}
+
+nav {
+    color: #ffffff;
+    margin: 0;
+    padding: 0em;
+    grid-area: nav;
+    background-color: #1a1a46;
+
+}
+
+main {
+    height: 80vh;
+    color: #000000;
+    grid-area: main;
+    background-image: url(resoruces/visu-bg2.png);
+    background-size: 100vw 80vh;
+}
+
+footer {
+    height: 11vh;
+    padding: 1em;
+    background-color: #1a1a46;
+    grid-area: footer;
+    z-index: 1;
+    border-top: 0.3em solid #141435;
+}
+
+/* Navigation (all pages)*/
+ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    font-weight: bold;
+}
+
+li a:hover{
+    font-size: 1em;
+    background-color: #3c03da;
+    height: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em 1em;
+}
+
+.RightAsideNav {
+    float: right;
+    background-color: #3c03da;
+    width: 10em;
+}
+
+.RightAsideNav a:hover {
+    background-color: #2f01af;
+}
+
+.ActiveNav {
+    background-color: #131333;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Footer Style (all pages)*/
+
+.FooterText {
+    text-align: center;
+}
+
+.FooterSubText {
+    text-align: center;
+    font-size: 0.6em;
+
+}
+
+.FooterLine {
+    margin: 1em;
+    bottom: 0;
+    width: 95%;
+}
+
+/* Welcoming (index.html) */
+
+.Welcoming {
+    padding-top: 4em;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+
+/* ABOUT.html Grid Layout */
+.GridLayout {
+    display: grid;
+    grid-template-columns: 30% 20% 50%;
+}
+
+.column {
+    height: 60vh;
+    padding: 2em;
+    margin: 1em;
+    margin-top: 4em;
+}
+
+.column img:hover {
+    transition: all 1s ease-in-out;
+    transform: scale(1.1);
+}
+
+.column:not(:first-child) {
+    background-color: rgba(15, 15, 15, 0.342);
+    backdrop-filter: blur(6px);
+    border-radius: 1em;
+    border: solid 1px #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.column p {
+    text-align: justify;
+    padding-bottom: 1em;
+}
+
+/* Coding Languages List (About.html)*/
+.CodingLanguges {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.CodingLanguges li {
+    background-color: rgba(15, 15, 15, 0.37);
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.CodingLanguges li:hover {
+    transition: all 1s ease-in-out;
+    background-color: rgba(15, 15, 15, 0.815);
+    font-size: 1.05em;
+}
