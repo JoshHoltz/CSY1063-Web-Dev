@@ -9,7 +9,7 @@
 }
 
 /*Font Styles*/
-h1, h2, h3, p, li{
+h1, h2, h3, p, li, form{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
 }
@@ -268,3 +268,37 @@ li a {
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
+
+/* CONTACT.HTML  */
+
+.FormBackground {
+    display: flex;
+    background-color: rgba(15, 15, 15, 0.5);
+    margin: 6em;
+    padding: 2em;
+    height: 50vh;
+    border-radius: 1em;
+    border: solid 1px #ffffff;
+    backdrop-filter: blur(6px);
+}
+
+/* Form Styling */
+.FormGrid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 0.5em;
+    width: 100%;
+}
+
+.FormColumn {
+    background-color: red;
+    padding: 1em;
+    border: #ffffff;
+}
+
+/* Text Styling */
+.FormH1 h1 {
+    text-align: center;
+    padding: 0.5em;
+}
+
