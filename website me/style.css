@@ -188,12 +188,14 @@ li a {
 /* Projects.html Gridd */
 
 .ProjectsGrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: auto;
+    display: flex;
+    overflow-x: auto;
 }
 
 .ProjectsColumn {
+    max-height: 50vh;;
+    flex: 0 0 auto;
+    width: calc(25% - 1em);
     background-color: rgba(15, 15, 15, 0.342);
     backdrop-filter: blur(6px);
     border-radius: 1em;
@@ -206,6 +208,7 @@ li a {
 .ProjectsGrid :hover {
     transition: all 1s ease-in-out;
     background-color: rgba(41, 40, 40, 0.815);
+    
 }
 
 .ProjectsColumn h1 {
@@ -221,5 +224,6 @@ li a {
 /* Projects.html Styling */
 
 .ProjectsTitle {
+    padding-top: 0.5em;
     text-align: center;
 }
