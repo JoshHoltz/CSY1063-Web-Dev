@@ -274,7 +274,8 @@ li a {
 .FormBackground {
     display: flex;
     background-color: rgba(15, 15, 15, 0.5);
-    margin: 6em;
+    margin: 3em auto;
+    max-width: 75%;
     padding: 2em;
     height: 50vh;
     border-radius: 1em;
@@ -286,19 +287,46 @@ li a {
 .FormGrid {
     display: grid;
     grid-template-columns: 40% 60%;
-    grid-column-gap: 0.5em;
+    grid-column-gap: 1em;
     width: 100%;
 }
 
 .FormColumn {
-    background-color: red;
-    padding: 1em;
+    background-color: rgba(15, 15, 15, 0.342);
+    text-align: center;
     border: #ffffff;
+    border-radius: 1em;
+    border: 1px solid #ffffff;
+}
+
+.FormInput {
+    margin-top: 1em;
+    width: 80%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.FormTextArea {
+    margin-top: 1em;
+    width: 90%;
+    height: 70%;
+    padding: 0.5em;
+    border-radius: 1em;
+    resize: none;
+}
+
+.SubmitButton {
+    width: 90%;
+    padding: 0.75em;
+    border-radius: 1em;
 }
 
 /* Text Styling */
-.FormH1 h1 {
+.FormTitle {
     text-align: center;
-    padding: 0.5em;
+    padding-top: 1em;
 }
 
