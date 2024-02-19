@@ -45,11 +45,9 @@ main {
 }
 
 footer {
-    height: 11vh;
-    padding: 1em;
+    padding: 1.5em;
     background-color: #1a1a46;
     grid-area: footer;
-    z-index: 1;
     border-top: 0.3em solid #141435;
 }
 
@@ -101,14 +99,27 @@ li a {
 
 /* Footer Style (all pages)*/
 
-.FooterText {
-    text-align: center;
+.FooterIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.FooterIcons i{ 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.FooterIcons i:hover{ 
+    color: #5757ec;
+    text-decoration: none;
+    font-size: 2em;
+    transform: scale(1.05);
 }
 
 .FooterSubText {
     text-align: center;
     font-size: 0.6em;
-
 }
 
 .FooterLine {
