@@ -275,7 +275,7 @@ li a {
     display: flex;
     background-color: rgba(15, 15, 15, 0.5);
     margin: 3em auto;
-    max-width: 75%;
+    max-width: 70%;
     padding: 2em;
     height: 50vh;
     border-radius: 1em;
@@ -299,7 +299,8 @@ li a {
 }  */
 
 .FormColumn:not(:first-child) {
-    background-color: rgba(15, 15, 15, 0.342);
+    /* background-color: rgba(15, 15, 15, 0.342); */
+    background-color: rgba(15, 15, 15, 0.473);;
     text-align: center;
     border: #ffffff;
     border-radius: 1em;
@@ -323,9 +324,9 @@ li a {
     text-decoration: none;
 }
 
-.FormColumn a:hover {
+/* .FormColumn a:hover {
     font-weight: bold;
-}
+} */
 
 /* FORM DATA AREA */
 .FormInput {
@@ -340,17 +341,35 @@ li a {
 
 .FormTextArea {
     margin-top: 1em;
-    width: 90%;
+    width: 80%;
     height: 15vh;
     padding: 0.5em;
     border-radius: 1em;
     resize: none;
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
 .SubmitButton {
-    width: 90%;
+    width: 80%;
     padding: 0.75em;
     border-radius: 1em;
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.SubmitButton:hover{
+    background-color: #1A1A46;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #ffffff;
+}
+
+.FormInput:focus, .FormTextArea:focus {
+    background-color: #1A1A46;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #ff0000;
+    transition:  0.5s ease-in-out;
+    width: 83%;
 }
 
 /* Text Styling */

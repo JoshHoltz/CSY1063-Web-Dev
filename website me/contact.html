@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!doctype html>
+<html lang="zxx"> <!--Change to "en" once lipsum text is gone-->
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-<!-- NAV -->
+  </head>
+  <body>
+
+
+  <!-- NAV -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -24,43 +25,60 @@
     </ul>
   </nav>
 
+
     <!-- MAIN -->
-  <main>
-    <h1 class="FormTitle">Want to Contact Me?</h1>
-    <div class="FormBackground">
+    <main>
+      <h1 class="FormTitle">Want to Contact Me?</h1>
+      <div class="FormBackground">
         <div class="FormGrid">
+          <div class="FormColumn">
+            <img src="resoruces/original-D25C2C30-7C1D-4B40-94A5-001FF23AF6DF.png"alt="BitEmoji"/>
+            <h1>Get in Touch.</h1>
+            <h1>Either use the Form or Email <br />Me!</h1><br/>
+            <a href="mailto:Joshua.Holtz@Outlook.com">&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-envelope"></i>&nbsp;Joshua.Holtz@Outlook.com</a>
+          </div>
 
-            <div class="FormColumn">
-              <img src="resoruces/original-D25C2C30-7C1D-4B40-94A5-001FF23AF6DF copy.png" alt="BitEmoji">
-              <h1>Get in Touch.</h1>
-              <h1>Either use the Form or Email <br> Me!</h1><br>
-              <a href="mailto:Joshua.Holtz@Outlook.com"><i class="fa-regular fa-envelope"></i>&nbsp Joshua.Holtz@Outlook.com</a>
-            </div>
+          <!-- Form Fields -->
+          <div class="FormColumn">
+            <h1>Contact Me</h1>
+            <form>
+              <input
+                type="text"
+                class="FormInput"
+                placeholder="Your Name"
+                required/>
 
-            <div class="FormColumn">
-              <h1>Contact Me</h1>
-              <form>
-                <input type="text" class="FormInput" placeholder="Your Name" required>
-                <input type="email" class="FormInput" placeholder="Your Email" required>
-                <input type="tel" class="FormInput" placeholder="Your Phone Number" required>
+              <input
+                type="email"
+                class="FormInput"
+                placeholder="Your Email"
+                required/>
 
-                <textarea class="FormTextArea" placeholder="Type your message here..." required></textarea>
-                <button class="FormSubmit">Send Message</button>
+              <input
+                type="tel"
+                class="FormInput"
+                placeholder="Your Phone Number"
+                required/>
+
+              <textarea
+                class="FormTextArea"
+                placeholder="Your Message..."
+                required></textarea><br>
+
+              <button class="SubmitButton">Send Message</button>
             </form>
-            </div>
-
+          </div>
         </div>
-
-
-  </main>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer>
-        <h1 class="FooterText">Todo</h1>
-        <p class="FooterSubText">@JoshuaHoltz 2024 | My Portfolio Website</p>
-        <hr class="FooterLine">
-      </footer>
-  
+      <h1 class="FooterText">Todo</h1>
+      <p class="FooterSubText">@JoshuaHoltz 2024 | My Portfolio Website</p>
+      <hr class="FooterLine">
+    </footer>
 
-</body>
+
+  </body>
 </html>
