@@ -286,12 +286,19 @@ li a {
 /* Form Styling */
 .FormGrid {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-column-gap: 1em;
+    grid-template-columns: 45% 55%;
     width: 100%;
 }
 
-.FormColumn {
+/* .FormColumn {
+    background-color: rgba(15, 15, 15, 0.342);
+    text-align: center;
+    border: #ffffff;
+    border-radius: 1em;
+    border: 1px solid #ffffff;
+}  */
+
+.FormColumn:not(:first-child) {
     background-color: rgba(15, 15, 15, 0.342);
     text-align: center;
     border: #ffffff;
@@ -299,6 +306,28 @@ li a {
     border: 1px solid #ffffff;
 }
 
+.FormColumn h1, h2, a{
+    padding-left: 1em;
+}
+
+.FormColumn img {
+    /* border: 1px solid #ddd; */
+    border-radius: 5em;
+    max-height: 10em;
+    margin-left: 1em;
+}
+
+.FormColumn a {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.FormColumn a:hover {
+    font-weight: bold;
+}
+
+/* FORM DATA AREA */
 .FormInput {
     margin-top: 1em;
     width: 80%;
@@ -312,7 +341,7 @@ li a {
 .FormTextArea {
     margin-top: 1em;
     width: 90%;
-    height: 70%;
+    height: 15vh;
     padding: 0.5em;
     border-radius: 1em;
     resize: none;
