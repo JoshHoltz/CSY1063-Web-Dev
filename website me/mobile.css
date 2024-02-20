@@ -1,13 +1,67 @@
+/* @media screen and (max-width: 800px) {
+    nav{
+      display: none;
+    }
+  } */
+
+/* Navigation */
+.showNav {
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid #ff0000;
+    border-bottom: 0.2em solid #ff0000;
+}
+
+.showNav::before {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-bottom: 0.2em solid #ffffff;
+}
+
+#clicked .on {
+    display: block;
+}
+
+#clicked .off {
+    display: none;
+}
+
+#clicked:target .on {
+    display: none;
+}
+
+#clicked:target .off {
+    display: block;
+}
+
+nav {
+    display: flex; 
+    flex-direction: column;
+    background-color: #0f0f27ad;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    z-index: 1;
+} 
+
+
+/* All Style Pages */
+body {
+    height: 100vh;
+}
+
+footer {
+    height: 15vh;
+}
 
 
 /* Projects.html */
 .ProjectsColumn {
     width: 90%;
-    background-color: rgba(15, 15, 15, 0.342);
-    backdrop-filter: blur(6px);
-    border-radius: 1em;
-    border: solid 1px #ffffff;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .ProjectsColumn img {
@@ -26,3 +80,32 @@
     padding: 1em;
 }
 
+/* Contact.html */
+@media screen and (max-width: 800px) {
+    .FormGrid .FormColumn:first-child{
+      display: none;
+    }
+  }
+
+.FormGrid {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.FormColumn {
+    width: 100%; 
+    padding: 0.5em; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+} 
+
+.MobileFormIcons {
+    position: absolute;
+    bottom: 0;
+}
+
+.MobileFormIcons a {
+    display: inline-block;
+    color: #ffffff;
+}

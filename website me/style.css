@@ -295,6 +295,12 @@ li a {
 }
 
 /* Form Styling */
+@media screen and (min-width: 1000px) {
+    .MobileFormIcons {
+      display: none;
+    }
+  }
+
 .FormGrid {
     display: grid;
     grid-template-columns: 45% 55%;
