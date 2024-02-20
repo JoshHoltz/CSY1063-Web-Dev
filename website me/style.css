@@ -310,7 +310,7 @@ li a {
 }  */
 
 .FormColumn:not(:first-child) {
-    /* background-color: rgba(15, 15, 15, 0.342); */
+    background-color: rgba(15, 15, 15, 0.342);
     background-color: rgba(15, 15, 15, 0.473);;
     text-align: center;
     border: #ffffff;
@@ -333,11 +333,12 @@ li a {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
     text-decoration: none;
+    padding: 1em;
 }
 
-/* .FormColumn a:hover {
+.FormColumn a:hover {
     font-weight: bold;
-} */
+}
 
 /* FORM DATA AREA */
 .FormInput {
