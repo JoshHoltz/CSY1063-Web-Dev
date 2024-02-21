@@ -16,7 +16,7 @@ h1, h2, h3, p, li, form{
 
 /* Main Index.html Styling */
 
-body {
+/* body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
@@ -25,7 +25,7 @@ body {
         "main main main"
         "footer footer footer"
     ;
-}
+} */
 
 nav {
     color: #ffffff;

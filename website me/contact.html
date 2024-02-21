@@ -6,24 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
   </head>
   <body>
 
-  <header>
-    <a href="#clicked" class="showNav on"></a>
-    <a href="#" class="showNav off"></a>
-  </header>
-
   <!-- NAV -->
-  <nav>
+
+  <nav id="clicked">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="About.html">About Me</a></li>
-      <li><a href="Projects.html">Projects</a></li>
-      <li><a class="ActiveNav" href="contact.html">Contact</a></li>
-      <li><a href="#Validation.html">Validation</a></li>
-      <li><a href="#video.html">Video Demo</a></li>
-      <li><a href="#sitereport.html">Report</a></li>
+      <li><a href="index.html" class="off">Home</a></li>
+      <li><a href="About.html" class="off">About Me</a></li>
+      <li><a href="Projects.html" class="off">Projects</a></li>
+      <!-- <li><a class="ActiveNav" href="contact.html">Contact</a></li> -->
+      <li><a href="contact.html" class="off">Contact</a></li>
+      <li><a href="contact.html" class="off">Contact</a></li>
+      <li><a href="#Validation.html" class="off">Validation</a></li>
+      <li><a href="#video.html" class="off">Video Demo</a></li>
+      <li><a href="#sitereport.html" class="off">Report</a></li>
       <li class="RightAsideNav">
         <a href="https://drive.google.com/file/d/1PnYEp5IO6dylh1Boix70_qCbU2gMcaCY/view?usp=drive_link" target="_blank" >My CV</a>
       </li>
@@ -34,17 +33,21 @@
     <!-- MAIN -->
     <main>
 
+      <a class="showNav"></a>
+      <a href="#clicked" class="showNav"></a>
+      <a href="#" class="off"></a> 
+
       <h1 class="FormTitle">Want to Contact Me?</h1>
       <div class="FormBackground">
         <div class="FormGrid">
           <div class="FormColumn">
             <img src="resoruces/original-D25C2C30-7C1D-4B40-94A5-001FF23AF6DF.png"alt="BitEmoji"/>
             <h1>Get in Touch.</h1>
-            <h1>Either use the Form or Email <br />Me!</h1><br/>
+            <h1>Either use the Form or Email Me!</h1>
             <a href="mailto:Joshua.Holtz@Outlook.com">&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-envelope"></i>&nbsp;Joshua.Holtz@Outlook.com</a>
-            <br>
+            <!-- <br> -->
             <a href="https://www.linkedin.com/in/joshua-holtz-030b42278">&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
-            <br>
+            <!-- <br> -->
             <a href="https://github.com/JoshHoltz">&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-square-github"></i>&nbsp;GitHub</a>
           </div>
 
