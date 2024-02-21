@@ -140,7 +140,16 @@ li a {
     letter-spacing: 3px;
 }
 
-
+.WelcomingUON {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
 
 /* ABOUT.html Grid Layout */
 .GridLayout {
@@ -275,7 +284,6 @@ li a {
 
 .ProjectsColumn img {
     padding-top: 0.5em;
-    padding: auto;
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
@@ -295,6 +303,12 @@ li a {
 }
 
 /* Form Styling */
+@media screen and (min-width: 1000px) {
+    .MobileFormIcons {
+      display: none;
+    }
+  }
+
 .FormGrid {
     display: grid;
     grid-template-columns: 45% 55%;
