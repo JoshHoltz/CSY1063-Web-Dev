@@ -67,6 +67,12 @@ nav ul {
 
 }
 
+.RightAsideNav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Projects.html */
 .ProjectsColumn {
     width: 90%;
@@ -101,10 +107,6 @@ nav ul {
     }
 } 
 
-.GridLayout .column:nth-child(2) {
-    background-color: red;
-}
-
 .GridLayout {
     display: block;
     overflow-x: scroll;
@@ -123,16 +125,6 @@ nav ul {
     border: none;
     scrollbar-width: 0px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Contact.html */
 @media screen and (max-width: 800px) {
