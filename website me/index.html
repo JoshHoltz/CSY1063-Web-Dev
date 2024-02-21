@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
   </head>
-  <body>
-
+  <body id="clicked">
 
     <!-- NAV -->
+  
     <nav>
-      <ul>
+      <ul class="off">
         <li><a class="ActiveNav" href="index.html">Home</a></li>
         <li><a href="About.html">About Me</a></li>
-        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Projects.html" class="off">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="#Validation.html">Validation</a></li>
         <li><a href="#video.html">Video Demo</a></li>
@@ -24,15 +26,20 @@
         </li>
       </ul>
     </nav>
+  
+  
+      <!-- MAIN -->
+      <main>
+  
+        <a href="#clicked" class="showNav on"></a>
+        <!-- <a href="#" class="showNav off"></a>  -->
 
-    <!-- Main -->
-    <main>
       <!-- WELCOMING -->
       <h1 class="Welcoming">
         Hi, I'm Josh, <br>
         A Web Development & Cyber Security Student
       </h1>
-      <p class="Welcoming"> Currently a 1<sup>st</sup>&nbsp;Year&nbsp;<strong>@ The University of Northampton</strong></p>
+      <p class="Welcoming"> Currently a 1<sup>st</sup>&nbsp;Year&nbsp;<div><p class="WelcomingUON">@ The University of Northampton</p></div>
     </main>
 
     <!-- Footer -->
