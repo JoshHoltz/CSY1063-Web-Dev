@@ -16,7 +16,7 @@ h1, h2, h3, p, li, form{
 
 /* Main Index.html Styling */
 
-/* body {
+body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     grid-template-rows: auto;
@@ -25,7 +25,7 @@ h1, h2, h3, p, li, form{
         "main main main"
         "footer footer footer"
     ;
-} */
+}
 
 nav {
     color: #ffffff;
@@ -140,7 +140,16 @@ li a {
     letter-spacing: 3px;
 }
 
-
+.WelcomingUON {
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
 
 /* ABOUT.html Grid Layout */
 .GridLayout {
