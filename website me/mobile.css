@@ -23,8 +23,8 @@ footer {
     height: 0.8em;
     width: 1.25em;
     display: block;
-    border-top: 0.2em solid #ff0000;
-    border-bottom: 0.2em solid #ff0000;
+    border-top: 0.2em solid #ffffff;
+    border-bottom: 0.2em solid #ffffff;
     z-index: 1;
 }
 
@@ -61,24 +61,10 @@ nav ul {
     display: block;
 }
 
-
-/* nav #clicked {
-    display: flex;
-} */
-
-/* #clicked .off {
-    display: none;
-} */
-
 #clicked:target .on {
     display: none;
 
 }
-
-/* #clicked:target .off {
-    display: block;
-} */
-
 
 /* Projects.html */
 .ProjectsColumn {
