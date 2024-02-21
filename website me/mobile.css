@@ -38,32 +38,46 @@ footer {
 
 nav {
     position: fixed;
-    display: flex; 
+    display: none; 
     flex-direction: column;
     background-color: #0f0f27ad;
     position: fixed;
-    left: 50%;
     top: 0;
     height: 100vh;
     width: 100%;
     z-index: 1;
 }  
 
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
 #clicked .on {
     display: block;
 }
 
-#clicked .off {
-    display: none;
+#clicked:target nav {
+    display: block;
 }
+
+
+/* nav #clicked {
+    display: flex;
+} */
+
+/* #clicked .off {
+    display: none;
+} */
 
 #clicked:target .on {
     display: none;
+
 }
 
-#clicked:target .off {
+/* #clicked:target .off {
     display: block;
-}
+} */
 
 
 /* Projects.html */
