@@ -427,6 +427,8 @@ li a {
 .validationcolumn:not(:first-child) {
     max-width: calc(33.3% - 1em);
     overflow: hidden;
+    grid-template-columns: repeat(1, 1fr);
+    /* background-color: #ff0000; */
 } 
 
 .validationcolumn h1 {
