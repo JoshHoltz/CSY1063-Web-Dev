@@ -155,3 +155,39 @@ nav ul {
     color: #ffffff;
 }
 
+/* Validation.html */
+
+/* Validation.html */
+
+.validationgrid {
+    display: flex;
+    overflow-x: auto;
+}
+
+.validationcolumn {
+    max-height: 60vh;
+    height: 60vh;
+    width: calc(50% - 1em);
+    min-width: 90%;
+    overflow-y: scroll;
+}
+
+.validationcolumn:not(:first-child) {
+    max-height: 60vh;
+    min-width: 90%;
+    width: calc(50% - 1em);
+}
+
+
+.ImageGrid {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.25em;
+}
+
+.ImageGrid img {
+    max-width: 100%;
+    border-radius: 0.25em;
+}
