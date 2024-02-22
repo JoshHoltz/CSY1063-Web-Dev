@@ -191,3 +191,10 @@ nav ul {
     max-width: 100%;
     border-radius: 0.25em;
 }
+
+/* Video.html */
+
+iframe {
+    margin: 1em;
+    max-width: 90%;
+}
