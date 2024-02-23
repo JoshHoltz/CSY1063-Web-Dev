@@ -103,26 +103,29 @@ nav ul {
 
 @media screen and (max-width: 800px) {
     .GridLayout .column:nth-child(2){
-      display: none; /* Initially hide the second column */
+        overflow-y: hidden;
+        order: 1;
     }
-} 
+}  
 
 .GridLayout {
-    display: block;
+    display: flex;
     overflow-x: scroll;
-    padding: 1em; /* Add padding to the container */
+    padding: 1em; 
+}
+
+.column {
+    min-width: 100%; 
+    padding: 1em; 
 }
 
 .column:not(:first-child) {
-    height: 70vh;
+    height: 65vh;
     width: 100vh;
-    max-width: 95%;
-    padding: 0;
+    padding-left: 1em;
     margin: 0 0.5em;
-    display: block;
     overflow-y: auto;
     box-sizing: border-box;
-    border: none;
 }
 
 /* Contact.html */
