@@ -73,9 +73,41 @@ nav ul {
     width: 100%;
 }
 
+.dropdown .dropbtn {
+    border: none;
+    background-color: #1a1a46;
+    color: white;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    min-width: 100vw;
+}
+
+/* .dropdown .dropbtn a {
+    border: none;
+    background-color: #1a1a46;
+    color: white;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    min-width: 100vw;
+} */
+
+.dropdown-content {
+    min-width: 100vw;
+}
+
+.dropdown:hover .dropdown-content {
+    display: contents;
+}
+
 /* Projects.html */
 .ProjectsColumn {
     width: 90%;
+}
+
+.dropbtn:hover {
+    position: flex;
 }
 
 .ProjectsColumn img {
@@ -157,8 +189,6 @@ nav ul {
     display: inline-block;
     color: #ffffff;
 }
-
-/* Validation.html */
 
 /* Validation.html */
 
