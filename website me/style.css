@@ -144,7 +144,6 @@ li a {
     text-decoration: underline;
 }
 
-
 /* Footer Style (all pages)*/
 
 .FooterIcons {
@@ -500,7 +499,7 @@ li a {
     border-radius: 0.25em;
 } 
 
-.ImageGridCSS  img{
+.ImageGridCSS img{
     max-width: 100%;
     border-radius: 0.25em;
 }
