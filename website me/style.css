@@ -9,7 +9,7 @@
 }
 
 /*Font Styles*/
-h1, h2, h3, p, li, form, figure{
+h1, h2, h3, p, li, form, figure, button{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
 }
@@ -107,6 +107,37 @@ li a {
     background-color: #131333;
     text-align: center;
     justify-content: center;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    background-color: #1a1a46;
+    color: white;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3c03da;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5027c0;
+    min-width: 5em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    z-index: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.5s ease-in-out;
 }
 
 
