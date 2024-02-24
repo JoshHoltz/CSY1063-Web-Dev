@@ -75,7 +75,7 @@ nav ul {
 
 .dropdown .dropbtn {
     border: none;
-    background-color: #1a1a46;
+    background-color: #0f0f2700;
     color: white;
     padding: 1em 1.5em;
     font-size: 1em;
@@ -97,34 +97,40 @@ nav ul {
     min-width: 100vw;
 }
 
+.dropdown-content a {
+    background-color: #0f0f27d3;
+}
+
 .dropdown:hover .dropdown-content {
     display: contents;
 }
 
 /* Projects.html */
 .ProjectsColumn {
-    width: 90%;
+    min-width: 90%;
+    max-height: 55vh;
+    overflow-y: scroll;
 }
 
-.dropbtn:hover {
+/* .dropbtn:hover {
     position: flex;
-}
+} */
 
-.ProjectsColumn img {
+/* .ProjectsColumn img {
     width: 18em;
     justify-content: center;
     align-items: center;
-}
+} */
 
-.ProjectsColumn h1 {
+/* .ProjectsColumn h1 {
     text-align: center;
     padding: 0.1em;
-}
+} */
 
-.ProjectsColumn p {
+/* .ProjectsColumn p {
     text-align: justify;
     padding: 1em;
-}
+} */
 
 /* About.html */
 @media screen and (max-width: 800px) {
@@ -135,7 +141,7 @@ nav ul {
 
 @media screen and (max-width: 800px) {
     .GridLayout .column:nth-child(2){
-        overflow-y: hidden;
+        /* overflow-y: hidden; */
         order: 1;
     }
 }  
@@ -166,6 +172,18 @@ nav ul {
       display: none;
     }
   }
+
+.FormBackground {
+    height: 50vh;
+    width: 100vh;
+    padding-top: 1em;
+}
+
+.FormTitle {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
 
 .FormGrid {
     display: flex;
@@ -212,7 +230,6 @@ nav ul {
     overflow-y: scroll;
 }
 
-
 .ImageGrid {
     padding: 1em;
     display: grid;
@@ -227,6 +244,15 @@ nav ul {
 }
 
 /* Video.html */
+
+.VideoSub {
+    /* display: none; */
+    font-size: 1.2em;
+}
+
+.VideoColumn {
+    max-height: 50vh;
+}
 
 iframe {
     margin: 1em;
