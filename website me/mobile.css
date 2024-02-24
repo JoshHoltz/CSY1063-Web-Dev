@@ -86,7 +86,7 @@ nav ul {
 
 .ProjectsColumn h1 {
     text-align: center;
-    padding: 0.5em;
+    padding: 0.1em;
 }
 
 .ProjectsColumn p {
@@ -179,6 +179,7 @@ nav ul {
     max-height: 60vh;
     min-width: 90%;
     width: calc(50% - 1em);
+    overflow-y: scroll;
 }
 
 
